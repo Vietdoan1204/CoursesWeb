@@ -1,9 +1,10 @@
 {
   "name": "coursesweb",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon src/index.js",
+    "watch": "sass src/resources/scss/app.scss src/public/css/app.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +20,9 @@
   "description": "",
   "dependencies": {
     "express": "^5.1.0",
-    "nodemon": "^3.1.10"
+    "express-handlebars": "^8.0.1",
+    "morgan": "^1.10.1",
+    "nodemon": "^3.1.10",
+    "sass": "^1.91.0"
   }
 }
